@@ -1,10 +1,10 @@
 ublue_variants:
-  - label: ublue-os/bluefin
+  - label: sociallydistant/bluefin
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: bluefin
         info: Bluefin
-  - label: ublue-os/bluefin-nvidia
+  - label: sociallydistant/bluefin-nvidia
     ks: /kickstart/ublue-os-nvidia.ks
     subvariants:
       - label: latest driver
@@ -13,12 +13,12 @@ ublue_variants:
     flavors:
       - label: bluefin-nvidia
         info: Bluefin
-  - label: ublue-os/aurora
+  - label: sociallydistant/aurora
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: aurora
         info: Aurora
-  - label: ublue-os/aurora-nvidia
+  - label: sociallydistant/aurora-nvidia
     ks: /kickstart/ublue-os-nvidia.ks
     subvariants:
       - label: latest driver
