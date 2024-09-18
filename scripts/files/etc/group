@@ -15,7 +15,6 @@ stapusr:x:156:
 stapsys:x:157:
 stapdev:x:158:
 pcp:x:960:
-docker:x:959:ublue-os
 lxd:x:958:ublue-os
 incus:x:251:
 incus-admin:x:250:ublue-os

@@ -2,7 +2,6 @@
 
 set -ouex pipefail
 
-systemctl enable docker.socket
 systemctl enable podman.socket
 systemctl enable swtpm-workaround.service
 systemctl enable libvirt-workaround.service
