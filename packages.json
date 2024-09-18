@@ -101,14 +101,9 @@
 				"cockpit-selinux",
 				"cockpit-storaged",
 				"cockpit-system",
+				"podman-docker",
 				"code",
-				"containerd.io",
 				"dbus-x11",
-				"devpod",
-				"docker-ce",
-				"docker-ce-cli",
-				"docker-buildx-plugin",
-				"docker-compose-plugin",
 				"edk2-ovmf",
 				"flatpak-builder",
 				"genisoimage",
@@ -163,7 +158,6 @@
 			"all": [
 				"firefox-langpacks",
 				"firefox",
-				"podman-docker",
 				"ublue-os-update-services"
 			],
 			"silverblue": [
