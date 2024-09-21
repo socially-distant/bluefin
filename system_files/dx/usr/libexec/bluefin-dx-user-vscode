@@ -25,7 +25,8 @@ fi
 
 # Setup VSCode
 # Pre-install preferred VSCode Extensions
-code --install-extension ms-vscode-remote.remote-ssh
+codium --install-extension jeanp413.open-remote-ssh
+codium --install-extension alefragnani.project-manager
 
 # Prevent future executions
 echo "Writing state file"
