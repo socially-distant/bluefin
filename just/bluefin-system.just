@@ -256,6 +256,11 @@ update-ng:
     flatpak update -y
     brew upgrade
 
+install-nix:
+    echo "This will install nix from Determinate Systems..."
+    echo "THIS IS EXPERIMENTAL WITH SELINUX"
+    HOME="/var/home/$USER" curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+
 # Toggle tailscale
 toggle-tailscale:
     #!/bin/bash
