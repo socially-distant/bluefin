@@ -23,8 +23,3 @@ If you'd like to enroll this key prior to installation or rebase, download the k
 ```bash
 sudo mokutil --timeout -1
 sudo mokutil --import public_key.der
-```
-
-#### Note
-
-If you encounter an issue with a password being recognized as incorrect, try using the `-` key on the numpad instead.
