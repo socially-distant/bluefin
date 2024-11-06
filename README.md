@@ -1,8 +1,6 @@
 # Bluefin and Aurora
 
-[![Aurora Stable](https://github.com/APoorDev/bluefin/actions/workflows/build-coreos-aurora.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-coreos-aurora.yml) [![Aurora Latest](https://github.com/APoorDev/bluefin/actions/workflows/build-latest-aurora.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-latest-aurora.yml) 
-
-[![Bluefin GTS](https://github.com/APoorDev/bluefin/actions/workflows/build-gts-bluefin.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-gts-bluefin.yml) [![Bluefin Stable](https://github.com/APoorDev/bluefin/actions/workflows/build-coreos-bluefin.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-coreos-bluefin.yml) [![Bluefin Latest](https://github.com/APoorDev/bluefin/actions/workflows/build-latest-bluefin.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-latest-bluefin.yml) 
+[![Latest Images](https://github.com/apoordev/bluefin/actions/workflows/build-image-latest.yml/badge.svg)](https://github.com/apoordev/bluefin/actions/workflows/build-image-latest.yml) [![Stable Images](https://github.com/apoordev/bluefin/actions/workflows/build-image-stable.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-image-stable.yml) [![GTS Images](https://github.com/apoordev/bluefin/actions/workflows/build-image-gts.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-image-gts.yml) 
 
 ### Secure Boot
 
