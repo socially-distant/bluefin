@@ -8,7 +8,7 @@
 
 Secure Boot is supported by default on our systems, providing an additional layer of security. After the first installation, you will be prompted to enroll the secure boot key in the BIOS.
 
-Enter the password `universalblue` 
+Enter the password `universalblue`
 when prompted to enroll our key.
 
 If this step is not completed during the initial setup, you can manually enroll the key by running the following command in the terminal:
