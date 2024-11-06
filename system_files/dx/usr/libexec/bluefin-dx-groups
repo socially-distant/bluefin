@@ -21,7 +21,6 @@ append_group() {
 }
 
 # Setup Groups
-append_group docker
 append_group incus-admin
 append_group lxd
 append_group libvirt

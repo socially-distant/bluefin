@@ -124,7 +124,7 @@ ptyxis-transparency opacity="0.95":
       printf "Value must be greater than 0 and less than or equal to 1: %s.\n" "{{ opacity }}"
     fi
 
-# Configure docker,incus-admin,lxd,libvirt container manager permissions
+# Configure incus-admin,lxd,libvirt container manager permissions
 dx-group:
     #!/usr/bin/env bash
     append_group() {
