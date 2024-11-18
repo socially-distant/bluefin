@@ -258,12 +258,6 @@ alias switch-channel := rebase-helper
 rebase-helper:
     @/usr/bin/ublue-rollback-helper
 
-update-ng:
-    echo "Note: This command doesn't work if you have locally layered packages"
-    sudo bootc upgrade
-    flatpak update -y
-    brew upgrade
-
 install-nix:
     echo "This will install nix from Determinate Systems..."
     echo "THIS IS EXPERIMENTAL WITH SELINUX"
