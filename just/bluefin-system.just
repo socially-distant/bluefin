@@ -274,7 +274,7 @@ install-system-flatpaks:
     elif [[ ${BASE_IMAGE_NAME} == 'kinoite' ]]; then
         FLATPAKS="aurora_flatpaks/flatpaks"
     fi
-    FLATPAK_LIST="$(curl https://raw.githubusercontent.com/ublue-os/bluefin/main/${FLATPAKS} | tr '\n' ' ')"
+    FLATPAK_LIST="$(curl https://raw.githubusercontent.com/apoordev/bluefin/main/${FLATPAKS} | tr '\n' ' ')"
     flatpak --system -y install --or-update ${FLATPAK_LIST}
 
 # Configure grub bootmenu visibility
