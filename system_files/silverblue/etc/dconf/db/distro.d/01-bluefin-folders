@@ -31,7 +31,7 @@ name='Wine'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/Development]
-apps=['dev-pod.desktop', 'code.desktop', 'virt-manager.desktop', 'io.podman_desktop.PodmanDesktop.desktop']
+apps=['dev-pod.desktop', 'codium.desktop', 'virt-manager.desktop', 'io.podman_desktop.PodmanDesktop.desktop']
 excluded-apps=['org.gnome.Sysprof.desktop']
 categories=['Development', 'IDE']
 name='Development'

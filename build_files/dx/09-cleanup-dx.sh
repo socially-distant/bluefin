@@ -6,7 +6,7 @@ systemctl enable podman.socket
 systemctl enable swtpm-workaround.service
 systemctl enable libvirt-workaround.service
 systemctl enable bluefin-dx-groups.service
-systemctl enable --global bluefin-dx-user-vscode.service
+systemctl enable --global bluefin-dx-user-vscodium.service
 systemctl disable pmie.service
 systemctl disable pmlogger.service
 
@@ -17,7 +17,7 @@ fi
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/ganto-umoci-fedora-"${FEDORA_MAJOR_VERSION}".repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/karmab-kcli-fedora-"${FEDORA_MAJOR_VERSION}".repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/atim-ubuntu-fonts-fedora-"${FEDORA_MAJOR_VERSION}".repo
-sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/vscode.repo
+sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/vscodium.repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/fedora-cisco-openh264.repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_ublue-os-akmods.repo

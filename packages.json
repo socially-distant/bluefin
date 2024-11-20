@@ -107,7 +107,7 @@
 				"cockpit-storaged",
 				"cockpit-system",
 				"podman-docker",
-				"code",
+				"codium",
 				"dbus-x11",
 				"edk2-ovmf",
 				"flatpak-builder",
