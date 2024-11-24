@@ -21,14 +21,7 @@ benchmark:
 bluefin-cli:
     @/usr/libexec/ublue-bling.sh
 
-# Configure Terminal Experience
-[group('System')]
-[private]
-configure-terminal:
-    @/usr/libexec/configure-terminal.sh
-
 # alias for toggle-devmode
-[group('System')]
 devmode:
     @ujust toggle-devmode
 
@@ -46,7 +39,7 @@ toggle-devmode:
     EOF
         exit
     fi
-    if /bin/grep -q "\-dx:" <<< $CURRENT_IMAGE ; then
+    if /bin/grep -q "\-dx" <<< $CURRENT_IMAGE ; then
         CURRENT_STATE="enabled"
     else
         CURRENT_STATE="disabled"
@@ -75,7 +68,7 @@ toggle-devmode:
         fi
         echo "Rebasing to a non developer image"
         # Remove -dx suffix from image, specifies ":" to mark the end of the image name
-        NEW_IMAGE=$(sed "s/\-dx:/:/" <<< $CURRENT_IMAGE)
+        NEW_IMAGE=$(sed "s/\-dx//" <<< $CURRENT_IMAGE)
         rpm-ostree rebase $NEW_IMAGE
     fi
 
