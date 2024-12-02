@@ -167,9 +167,9 @@
 			],
 			"silverblue": [
 				"gnome-extensions-app",
+				"gnome-shell-extension-background-logo",
 				"gnome-software-rpm-ostree",
-				"gnome-terminal-nautilus",
-				"gnome-tour"
+				"gnome-terminal-nautilus"
 			],
 			"kinoite": [
 				"plasma-welcome"
@@ -197,7 +197,9 @@
 	},
 	"41": {
 		"include": {
-			"all": [],
+			"all": [
+				"google-noto-fonts-all"
+			],
 			"kinoite": [
 				"ptyxis"
 			],
