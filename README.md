@@ -1,11 +1,11 @@
-<h3 align="center" style="font-size:60px;">Bluefin and Aurora</h3>
-<h5 align="center">My personalized fork of Bluefin and Aurora</h5>
+<h3 align="center" style="font-size:60px;">Bluefin</h3>
+<h5 align="center">My personalized fork of Bluefin</h5>
 
 [![Latest Images](https://github.com/apoordev/bluefin/actions/workflows/build-image-latest.yml/badge.svg)](https://github.com/apoordev/bluefin/actions/workflows/build-image-latest.yml) [![Stable Images](https://github.com/apoordev/bluefin/actions/workflows/build-image-stable.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-image-stable.yml) [![GTS Images](https://github.com/apoordev/bluefin/actions/workflows/build-image-gts.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-image-gts.yml) 
 
 ## About & Features
 
-This is my personal opinionated fork of [ublue](https://universal-blue.org/)'s Bluefin and Aurora. It still depends on [ublue-os/main](https://github.com/ublue-os/main), [ublue-os/hwe](https://github.com/ublue-os/hwe), and [ublue-os/akmods](https://github.com/ublue-os/akmods). This fork adds the following features:
+This is my personal opinionated fork of [ublue](https://universal-blue.org/)'s Bluefin. It still depends on [ublue-os/main](https://github.com/ublue-os/main), [ublue-os/hwe](https://github.com/ublue-os/hwe), and [ublue-os/akmods](https://github.com/ublue-os/akmods). This fork adds the following features:
 
 - Replaced VSCode with VSCodium (topgrade support in [#788](https://github.com/topgrade-rs/topgrade/pull/788))
 - Added install-nix ujust command [EXPERIMENTAL]
