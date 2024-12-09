@@ -83,16 +83,6 @@
 				"zenity"
 				
 			],
-			"kinoite": [
-				"kde-runtime-docs",
-				"kdenetwork-filesharing",
-				"kdeplasma-addons",
-				"kdialog",
-				"libadwaita-qt5",
-				"libadwaita-qt6",
-				"plasma-wallpapers-dynamic",
-				"skanpage"
-			],
 			"dx": [
 				"adobe-source-code-pro-fonts",
 				"android-tools",
@@ -173,9 +163,6 @@
 				"gnome-software-rpm-ostree",
 				"gnome-terminal-nautilus"
 			],
-			"kinoite": [
-				"plasma-welcome"
-			],
 			"dx": []
 		}
 	},
@@ -193,7 +180,6 @@
 		"exclude": {
 			"all": [],
 			"silverblue": [],
-			"kinoite": [],
 			"dx": []
 		}
 	},
@@ -202,18 +188,11 @@
 			"all": [
 				"google-noto-fonts-all"
 			],
-			"kinoite": [
-				"ptyxis"
-			],
 			"silverblue": []
 		},
 		"exclude": {
 			"all": [],
 			"silverblue": [],
-			"kinoite": [
-				"plasma-welcome",
-				"plasma-welcome-fedora"
-			],
 			"dx": []
 		}
 	}
