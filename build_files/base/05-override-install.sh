@@ -38,7 +38,7 @@ rm /etc/yum.repos.d/_copr_sentry-switcheroo-control_discrete.repo
 rpm-ostree override replace \
     --experimental \
     --from repo=copr:copr.fedorainfracloud.org:sneexy:python-validity \
-        open-fprintd fprintd-clients fprintd-clients-pam python3-validity
+        python3-validity
 
 # Starship Shell Prompt
 curl --retry 3 -Lo /tmp/starship.tar.gz "https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz"
