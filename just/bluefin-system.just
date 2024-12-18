@@ -238,14 +238,6 @@ install-nix:
     echo "THIS IS EXPERIMENTAL WITH SELINUX"
     HOME="/var/home/$USER" curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 
-install-validity:
-    echo "This will install the validity fingerprint driver for the T480s/T480"
-    sudo wget -P /etc/yum.repos.d/ https://copr.fedorainfracloud.org/coprs/sneexy/python-validity/repo/fedora-$(rpm -E %fedora)/sneexy-python-validity-fedora-$(rpm -E %fedora).repo
-    rpm-ostree override remove fprintd fprintd-pam --experimental --from repo=copr:copr.fedorainfracloud.org:sneexy:python-validity --install open-fprintd --install fprintd-clients --install fprintd-clients-pam --install python3-validity 
-    sudo systemctl start python3-validity.service
-    sudo systemctl start open-fprintd.service
-    sudo systemctl enable open-fprintd-resume.service open-fprintd-suspend.service open-fprintd.service python3-validity.service
-
 # Toggle tailscale
 [group('System')]
 toggle-tailscale:
