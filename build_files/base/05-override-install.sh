@@ -34,6 +34,12 @@ rpm-ostree override replace \
 
 rm /etc/yum.repos.d/_copr_sentry-switcheroo-control_discrete.repo
 
+# Validity fingerprint sensor driver
+rpm-ostree override replace \
+    --experimental \
+    --from repo=copr:copr.fedorainfracloud.org:sneexy:python-validity \
+        open-fprintd fprintd-clients fprintd-clients-pam python3-validity
+
 # Starship Shell Prompt
 curl --retry 3 -Lo /tmp/starship.tar.gz "https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz"
 tar -xzf /tmp/starship.tar.gz -C /tmp
