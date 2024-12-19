@@ -99,6 +99,7 @@
 				"cockpit-storaged",
 				"cockpit-system",
 				"podman-docker",
+				"devpod",
 				"codium",
 				"dbus-x11",
 				"edk2-ovmf",
