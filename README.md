@@ -9,6 +9,7 @@ This is my personal opinionated fork of [ublue](https://universal-blue.org/)'s B
 
 - Replaced VSCode with VSCodium (topgrade support in [#788](https://github.com/topgrade-rs/topgrade/pull/788))
 - Added install-nix ujust command [EXPERIMENTAL]
+- Added waydroid and waydroid ujust command from bazzite
 - Changed Logo
 
 ### Secure Boot
