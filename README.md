@@ -2,7 +2,7 @@
 <h5 align="center">My personalized fork of Bluefin</h5>
 <h5 align="center">*Deinonychus antirrhopus*</h5>
 
-[![Latest Images](https://github.com/apoordev/bluefin/actions/workflows/build-image-latest.yml/badge.svg)](https://github.com/apoordev/bluefin/actions/workflows/build-image-latest.yml) [![Stable Images](https://github.com/apoordev/bluefin/actions/workflows/build-image-stable.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-image-stable.yml) [![GTS Images](https://github.com/apoordev/bluefin/actions/workflows/build-image-gts.yml/badge.svg)](https://github.com/APoorDev/bluefin/actions/workflows/build-image-gts.yml) 
+[![Latest Images](https://github.com/socially-distant/bluefin/actions/workflows/build-image-latest.yml/badge.svg)](https://github.com/socially-distant/bluefin/actions/workflows/build-image-latest.yml) [![Stable Images](https://github.com/socially-distant/bluefin/actions/workflows/build-image-stable.yml/badge.svg)](https://github.com/socially-distant/bluefin/actions/workflows/build-image-stable.yml) [![GTS Images](https://github.com/socially-distant/bluefin/actions/workflows/build-image-gts.yml/badge.svg)](https://github.com/socially-distant/bluefin/actions/workflows/build-image-gts.yml) 
 
 ## About & Features
 

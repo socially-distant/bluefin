@@ -218,7 +218,7 @@ configure-vfio ACTION="":
 install-system-flatpaks:
     #!/usr/bin/bash
     FLATPAKS="bluefin_flatpaks/flatpaks"
-    FLATPAK_LIST="$(curl https://raw.githubusercontent.com/apoordev/bluefin/main/${FLATPAKS} | tr '\n' ' ')"
+    FLATPAK_LIST="$(curl https://raw.githubusercontent.com/socially-distant/bluefin/main/${FLATPAKS} | tr '\n' ' ')"
     flatpak --system -y install --or-update ${FLATPAK_LIST}
 
 # Configure grub bootmenu visibility
