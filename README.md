@@ -1,14 +1,15 @@
 <h3 align="center" style="font-size:60px;">Bluefin</h3>
-<h5 align="center">My personalized fork of Bluefin</h5>
+<h5 align="center">Personalized fork of Bluefin</h5>
 <h5 align="center">*Deinonychus antirrhopus*</h5>
 
 [![Latest Images](https://github.com/socially-distant/bluefin/actions/workflows/build-image-latest.yml/badge.svg)](https://github.com/socially-distant/bluefin/actions/workflows/build-image-latest.yml) [![Stable Images](https://github.com/socially-distant/bluefin/actions/workflows/build-image-stable.yml/badge.svg)](https://github.com/socially-distant/bluefin/actions/workflows/build-image-stable.yml) [![GTS Images](https://github.com/socially-distant/bluefin/actions/workflows/build-image-gts.yml/badge.svg)](https://github.com/socially-distant/bluefin/actions/workflows/build-image-gts.yml) 
 
 ## About & Features
 
-This is my personal opinionated fork of [ublue](https://universal-blue.org/)'s Bluefin. It still depends on [ublue-os/main](https://github.com/ublue-os/main), [ublue-os/hwe](https://github.com/ublue-os/hwe), and [ublue-os/akmods](https://github.com/ublue-os/akmods). This fork adds the following features:
+This is [apoordev](https://github.com/apoordev)'s opinionated fork of [ublue](https://universal-blue.org/)'s Bluefin. It still depends on [ublue-os/main](https://github.com/ublue-os/main), [ublue-os/hwe](https://github.com/ublue-os/hwe), and [ublue-os/akmods](https://github.com/ublue-os/akmods). This fork adds the following features:
 
-- Replaced VSCode with VSCodium (topgrade support in [#788](https://github.com/topgrade-rs/topgrade/pull/788))
+- Replaced VSCode with VSCodium
+- Added neovim
 - Added install-nix ujust command [EXPERIMENTAL]
 - Added waydroid and waydroid ujust command from bazzite
 - Changed Logo
