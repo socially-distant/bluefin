@@ -157,6 +157,7 @@
 				"umoci",
 				"virt-manager",
 				"virt-viewer",
+				"spice-gtk-tools",
 				"virt-v2v",
 				"ydotool"
 			]
