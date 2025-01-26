@@ -110,6 +110,7 @@
 				"podman-docker",
 				"devpod",
 				"codium",
+				"neovim",
 				"dbus-x11",
 				"edk2-ovmf",
 				"flatpak-builder",
