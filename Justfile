@@ -1,4 +1,4 @@
-repo_organization := "ublue-os"
+repo_organization := "socially-distant"
 rechunker_image := "ghcr.io/hhd-dev/rechunk:v1.0.1"
 iso_builder_image := "ghcr.io/jasonn3/build-container-installer:v1.2.3"
 images := '(
@@ -210,16 +210,16 @@ build $image="bluefin" $tag="latest" $flavor="main" rechunk="0" ghcr="0" pipelin
     LABELS+=("--label" "org.opencontainers.image.title=${image_name}")
     LABELS+=("--label" "org.opencontainers.image.version=${ver}")
     LABELS+=("--label" "ostree.linux=${kernel_release}")
-    LABELS+=("--label" "io.artifacthub.package.readme-url=https://raw.githubusercontent.com/ublue-os/bluefin/refs/heads/main/README.md")
+    LABELS+=("--label" "io.artifacthub.package.readme-url=https://raw.githubusercontent.com/socially-distant/bluefin/refs/heads/main/README.md")
     LABELS+=("--label" "io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4")
     LABELS+=("--label" "org.opencontainers.image.description=An interpretation of the Ubuntu spirit built on Fedora technology")
     LABELS+=("--label" "containers.bootc=1")
     LABELS+=("--label" "org.opencontainers.image.created=$(date -u +%Y\-%m\-%d\T%H\:%M\:%S\Z)")
-    LABELS+=("--label" "org.opencontainers.image.source=https://raw.githubusercontent.com/ublue-os/bluefin/refs/heads/main/Containerfile")
+    LABELS+=("--label" "org.opencontainers.image.source=https://raw.githubusercontent.com/socially-distant/bluefin/refs/heads/main/Containerfile")
     LABELS+=("--label" "org.opencontainers.image.url=https://projectbluefin.io")
     LABELS+=("--label" "org.opencontainers.image.vendor={{ repo_organization }}")
     LABELS+=("--label" "io.artifacthub.package.deprecated=false")
-    LABELS+=("--label" "io.artifacthub.package.keywords=bootc,fedora,bluefin,ublue,universal-blue")
+    LABELS+=("--label" "io.artifacthub.package.keywords=bootc,fedora,bluefin,sd,socially-distant")
     LABELS+=("--label" "io.artifacthub.package.maintainers=[{\"name\": \"castrojo\", \"email\": \"jorge.castro@gmail.com\"}]")
 
     echo "::endgroup::"
@@ -315,13 +315,13 @@ rechunk $image="bluefin" $tag="latest" $flavor="main" ghcr="0" pipeline="0":
     # Rest of Labels
     LABELS="
         io.artifacthub.package.deprecated=false
-        io.artifacthub.package.keywords=bootc,fedora,bluefin,ublue,universal-blue
+        io.artifacthub.package.keywords=bootc,fedora,bluefin,sd,socially-distant
         io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
         io.artifacthub.package.maintainers=[{\"name\": \"castrojo\", \"email\": \"jorge.castro@gmail.com\"}]
-        io.artifacthub.package.readme-url=https://raw.githubusercontent.com/ublue-os/bluefin/refs/heads/main/README.md
+        io.artifacthub.package.readme-url=https://raw.githubusercontent.com/socially-distant/bluefin/refs/heads/main/README.md
         org.opencontainers.image.created=$(date -u +%Y\-%m\-%d\T%H\:%M\:%S\Z)
         org.opencontainers.image.license=Apache-2.0
-        org.opencontainers.image.source=https://raw.githubusercontent.com/ublue-os/bluefin/refs/heads/main/Containerfile
+        org.opencontainers.image.source=https://raw.githubusercontent.com/socially-distant/bluefin/refs/heads/main/Containerfile
         org.opencontainers.image.title=${image_name}
         org.opencontainers.image.url=https://projectbluefin.io
         org.opencontainers.image.vendor={{ repo_organization }}
@@ -388,7 +388,7 @@ rechunk $image="bluefin" $tag="latest" $flavor="main" ghcr="0" pipeline="0":
         --volume "$PWD:/var/git" \
         --volume cache_ostree:/var/ostree \
         --env REPO=/var/ostree/repo \
-        --env PREV_REF=ghcr.io/ublue-os/"${image_name}":"${tag}" \
+        --env PREV_REF=ghcr.io/socially-distant/"${image_name}":"${tag}" \
         --env OUT_NAME="$OUT_NAME" \
         --env LABELS="${LABELS}" \
         --env "DESCRIPTION='An interpretation of the Ubuntu spirit built on Fedora technology'" \
@@ -486,8 +486,8 @@ build-iso $image="bluefin" $tag="latest" $flavor="main" ghcr="0" pipeline="0":
 
     # Local or Github Build
     if [[ "{{ ghcr }}" == "1" ]]; then
-        IMAGE_FULL=ghcr.io/ublue-os/"${image_name}":"${tag}"
-        IMAGE_REPO=ghcr.io/ublue-os
+        IMAGE_FULL=ghcr.io/socially-distant/"${image_name}":"${tag}"
+        IMAGE_REPO=ghcr.io/socially-distant
         ${PODMAN} pull "${IMAGE_FULL}"
     else
         IMAGE_FULL=localhost/"${image_name}":"${tag}"
@@ -647,7 +647,7 @@ changelogs branch="stable" handwritten="":
 
 # Verify Container with Cosign
 [group('Utility')]
-verify-container container="" registry="ghcr.io/ublue-os" key="":
+verify-container container="" registry="ghcr.io/socially-distant" key="":
     #!/usr/bin/bash
     set -eou pipefail
 
@@ -669,7 +669,7 @@ verify-container container="" registry="ghcr.io/ublue-os" key="":
     # Public Key for Container Verification
     key={{ key }}
     if [[ -z "${key:-}" ]]; then
-        key="https://raw.githubusercontent.com/ublue-os/main/main/cosign.pub"
+        key="https://raw.githubusercontent.com/socially-distant/main/main/cosign.pub"
     fi
 
     # Verify Container using cosign public key
