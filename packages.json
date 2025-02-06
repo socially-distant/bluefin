@@ -60,6 +60,7 @@
 				"stress-ng",
 				"tailscale",
 				"tmux",
+				"topgrade",
 				"ublue-fastfetch",
 				"ublue-motd",
 				"usbmuxd",
@@ -165,8 +166,7 @@
 		"exclude": {
 			"all": [
 				"firefox-langpacks",
-				"firefox",
-				"ublue-os-update-services"
+				"firefox"
 			],
 			"silverblue": [
 				"gnome-extensions-app",
