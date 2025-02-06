@@ -665,7 +665,7 @@ verify-container container="" registry="ghcr.io/ublue-os" key="":
     # Public Key for Container Verification
     key={{ key }}
     if [[ -z "${key:-}" ]]; then
-        key="https://raw.githubusercontent.com/socially-distant/main/main/cosign.pub"
+        key="https://raw.githubusercontent.com/ublue-os/main/main/cosign.pub"
     fi
 
     # Verify Container using cosign public key
