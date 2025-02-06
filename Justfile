@@ -643,7 +643,7 @@ changelogs branch="stable" handwritten="":
 
 # Verify Container with Cosign
 [group('Utility')]
-verify-container container="" registry="ghcr.io/socially-distant" key="":
+verify-container container="" registry="ghcr.io/ublue-os" key="":
     #!/usr/bin/bash
     set -eou pipefail
 
