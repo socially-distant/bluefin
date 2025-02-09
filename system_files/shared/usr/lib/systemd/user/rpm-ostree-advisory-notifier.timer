@@ -2,7 +2,7 @@
 Description=Daily User RPM OSTree Security Advisory Notifier Prompt
 
 [Timer]
-OnBootSec=2h
+OnBootSec=15min
 OnUnitActiveSec=6h
 
 [Install]
