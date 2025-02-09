@@ -8,6 +8,7 @@
 
 This is [apoordev](https://github.com/apoordev)'s opinionated fork of [ublue](https://universal-blue.org/)'s Bluefin. It still depends on [ublue-os/main](https://github.com/ublue-os/main), [ublue-os/hwe](https://github.com/ublue-os/hwe), and [ublue-os/akmods](https://github.com/ublue-os/akmods). This fork adds the following features:
 
+- Added Reboot Enforcement Notification for Security Advisory Patches
 - Replaced VSCode with VSCodium
 - Added neovim
 - Added RamaLama

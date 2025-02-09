@@ -1,0 +1,6 @@
+[Unit]
+Description=RPM OSTree Security Advisory Notifier
+
+[Service]
+Type=simple
+ExecStart=/usr/libexec/rpm-ostree-advisory-notifier

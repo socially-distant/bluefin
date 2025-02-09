@@ -1,0 +1,9 @@
+[Unit]
+Description=Daily User RPM OSTree Security Advisory Notifier Prompt
+
+[Timer]
+OnBootSec=2h
+OnUnitActiveSec=6h
+
+[Install]
+WantedBy=timers.target

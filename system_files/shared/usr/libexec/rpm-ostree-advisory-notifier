@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Get the advisories from rpm-ostree
+advisories=$(rpm-ostree status --json | jq '."cached-update"."advisories"')
+
+if [ "$advisories" = "[]" ]; then
+    echo "No pending advisories found."
+    exit 0
+elif [ "$advisories" = null ]; then
+    echo "No pending advisories found."
+    exit 0
+fi
+
+# Build the message string
+message="Updates are available. Please reboot as soon as possible to patch the following security advisories.\n\n"
+
+# Process each advisory and append to the message
+IFS=$'\n'
+for adv in $(echo "$advisories" | jq -r '.[] | @base64'); do
+    decoded=$(base64 --decode <<< "$adv")
+    # Parse the advisory details
+    advis_id=$(echo "$decoded" | jq -r '.[0]')
+    packages=$(echo "$decoded" | jq -r '.[3] | join("\n")')
+    cve_ref=$(echo "$decoded" | jq -r '.[4].cve_references[0] | join("\n")')
+
+    message+="<b>Advisory ID:</b> $advis_id\n"
+    if [ $(echo "$packages" | wc -l) -gt 0 ]; then
+        message+="<b>Affected Packages</b>:\n$packages\n"
+    fi
+    if [ $(echo "$cve_ref" | wc -l) -gt 0 ]; then
+        message+="<b>CVE References:</b>\n$cve_ref\n"
+    fi
+done
+
+message+="\nIf you dont reboot these changes will remain <b>UNPATCHED!</b>\nWould you like to reboot now?"
+# Show the dialog with the message and options (can also use yad)
+zenity --question \
+    --title "System Reboot Required" \
+    --text "${message}" \
+    --width 600
+
+if [ "$?" -eq "0" ]; then
+    echo "User chose to reboot. Rebooting in 5 seconds..."
+    sleep 5
+    reboot
+fi
+
+exit 0
