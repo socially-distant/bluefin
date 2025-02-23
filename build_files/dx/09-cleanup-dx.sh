@@ -11,6 +11,7 @@ systemctl enable bluefin-dx-groups.service
 systemctl enable --global bluefin-dx-user-vscodium.service
 
 dnf5 -y copr disable ublue-os/staging
+dnf5 -y copr disable ublue-os/packages
 if [[ "${FEDORA_MAJOR_VERSION}" -lt "42" ]]; then
     dnf5 -y copr disable ganto/lxc4
 fi
