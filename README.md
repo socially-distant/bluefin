@@ -11,7 +11,6 @@ This is [apoordev](https://github.com/apoordev)'s opinionated fork of [ublue](ht
 - Added Reboot Enforcement Notification for Security Advisory Patches
 - Replaced VSCode with VSCodium
 - Added neovim
-- Added RamaLama
 - Added install-nix ujust command [EXPERIMENTAL]
 - Added waydroid and waydroid ujust command from bazzite
 - Changed Logo
