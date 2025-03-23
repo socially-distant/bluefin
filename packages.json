@@ -188,7 +188,11 @@
 			"silverblue": [],
 			"dx": [
 				"lxd-agent",
-				"lxd"
+				"lxd",
+				"docker-ce",
+				"docker-ce-cli",
+				"docker-buildx-plugin",
+				"docker-compose-plugin"
 			]
 		},
 		"exclude": {
@@ -202,7 +206,25 @@
 			"all": [
 				"google-noto-fonts-all"
 			],
-			"silverblue": []
+			"silverblue": [],
+			"dx": [
+				"docker-ce",
+				"docker-ce-cli",
+				"docker-buildx-plugin",
+				"docker-compose-plugin"
+			]
+		},
+		"exclude": {
+			"all": [],
+			"silverblue": [],
+			"dx": []
+		}
+	},
+	"42": {
+		"include": {
+			"all": [],
+			"silverblue": [],
+			"dx": []
 		},
 		"exclude": {
 			"all": [],
