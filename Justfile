@@ -1,5 +1,5 @@
 repo_organization := "socially-distant"
-rechunker_image := "ghcr.io/hhd-dev/rechunk:v1.0.1"
+rechunker_image := "ghcr.io/hhd-dev/rechunk:v1.2.1"
 iso_builder_image := "ghcr.io/jasonn3/build-container-installer:v1.2.3"
 images := '(
     [bluefin]=bluefin
@@ -134,7 +134,7 @@ build $image="bluefin" $tag="latest" $flavor="main" rechunk="0" ghcr="0" pipelin
     elif [[ "${tag}" =~ gts|stable ]]; then
         akmods_flavor="coreos-stable"
     elif [[ "${tag}" =~ beta ]]; then
-        akmods_flavor="coreos-testing"
+        akmods_flavor="main"
     else
         akmods_flavor="main"
     fi
