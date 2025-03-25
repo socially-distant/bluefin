@@ -188,7 +188,7 @@
 			"silverblue": [],
 			"dx": [
 				"lxd-agent",
-				"lxd",
+				"lxd"
 			]
 		},
 		"exclude": {
