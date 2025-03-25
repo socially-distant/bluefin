@@ -189,10 +189,6 @@
 			"dx": [
 				"lxd-agent",
 				"lxd",
-				"docker-ce",
-				"docker-ce-cli",
-				"docker-buildx-plugin",
-				"docker-compose-plugin"
 			]
 		},
 		"exclude": {
@@ -207,12 +203,7 @@
 				"google-noto-fonts-all"
 			],
 			"silverblue": [],
-			"dx": [
-				"docker-ce",
-				"docker-ce-cli",
-				"docker-buildx-plugin",
-				"docker-compose-plugin"
-			]
+			"dx": []
 		},
 		"exclude": {
 			"all": [],

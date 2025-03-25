@@ -90,7 +90,6 @@ BLACKLIST_VERSIONS = [
     "gnome-control-center-filesystem",
     "mesa-filesystem",
     "podman",
-    "docker-ce",
     "incus",
     "devpod",
     "nvidia-driver"
