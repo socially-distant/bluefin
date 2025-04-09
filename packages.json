@@ -146,6 +146,7 @@
 				"qemu-user-binfmt",
 				"qemu-user-static",
 				"qemu",
+				"remmina",
 				"rocm-hip",
 				"rocm-opencl",
 				"rocm-smi",
@@ -200,9 +201,6 @@
 				"google-noto-fonts-all"
 			],
 			"dx": [
-				"docker-ce",
-				"docker-ce-cli",
-				"docker-compose-plugin"
 			]
 		},
 		"exclude": {
