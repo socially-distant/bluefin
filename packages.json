@@ -31,6 +31,7 @@
 				"gnome-shell-extension-logo-menu",
 				"gnome-shell-extension-search-light",
 				"gnome-shell-extension-tailscale-gnome-qs",
+        		"gnome-tweaks",
 				"gum",
 				"hplip",
 				"ibus-mozc",
@@ -76,6 +77,7 @@
 				"ublue-brew",
 				"ublue-fastfetch",
 				"ublue-motd",
+				"ublue-setup-services",
 				"uld",
 				"usbmuxd",
 				"wireguard-tools",
@@ -106,6 +108,10 @@
 				"codium",
 				"neovim",
 				"dbus-x11",
+				"docker-buildx-plugin",
+				"docker-ce",
+				"docker-ce-cli",
+				"docker-compose-plugin",
 				"edk2-ovmf",
 				"flatpak-builder",
 				"genisoimage",
@@ -123,8 +129,8 @@
 				"nicstat",
 				"numactl",
 				"osbuild-selinux",
-				"p7zip-plugins",
 				"p7zip",
+				"p7zip-plugins",
 				"podman-bootc",
 				"podman-compose",
 				"podman-machine",
@@ -132,6 +138,7 @@
 				"podmansh",
 				"powerline-fonts",
 				"python3-ramalama",
+				"qemu",
 				"qemu-char-spice",
 				"qemu-device-display-virtio-gpu",
 				"qemu-device-display-virtio-vga",
@@ -140,7 +147,6 @@
 				"qemu-system-x86-core",
 				"qemu-user-binfmt",
 				"qemu-user-static",
-				"qemu",
 				"remmina",
 				"rocm-hip",
 				"rocm-opencl",
@@ -152,39 +158,26 @@
 				"udica",
 				"umoci",
 				"virt-manager",
+				"virt-v2v",
 				"virt-viewer",
 				"spice-gtk-tools",
-				"virt-v2v",
 				"ydotool"
 			]
 		},
 		"exclude": {
 			"all": [
-				"firefox-langpacks",
+				"fedora-bookmarks",
+				"fedora-chromium-config",
+				"fedora-chromium-config-gnome",
 				"firefox",
+				"firefox-langpacks",
 				"gnome-extensions-app",
 				"gnome-shell-extension-background-logo",
 				"gnome-software-rpm-ostree",
 				"gnome-terminal-nautilus",
-				"podman-docker"
+				"podman-docker",
+				"yelp"
 			],
-			"dx": []
-		}
-	},
-	"40": {
-		"include": {
-			"all": [
-				"epson-inkjet-printer-escpr",
-				"epson-inkjet-printer-escpr2",
-				"ptyxis"
-			],
-			"dx": [
-				"lxd-agent",
-				"lxd"
-			]
-		},
-		"exclude": {
-			"all": [],
 			"dx": []
 		}
 	},
@@ -195,8 +188,7 @@
 				"epson-inkjet-printer-escpr2",
 				"google-noto-fonts-all"
 			],
-			"dx": [
-			]
+			"dx": []
 		},
 		"exclude": {
 			"all": [],
